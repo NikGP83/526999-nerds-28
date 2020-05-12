@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Николай Головин](https://up.htmlacademy.ru/htmlcss/28/user/526999).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 

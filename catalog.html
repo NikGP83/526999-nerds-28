@@ -24,12 +24,56 @@
   <main>
     <h1 class="main-title">Магазин готовых шаблонов</h1>
 
-
-
     <section class="filters">
 
       <h2 class="visually hidden">Фильтры</h2>
-        <!--тут будут фильтры-->
+
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+            <label for="adaptive-layout">Адаптивная</label>
+            <input type="radio" name="layout" value="adaptive" id="adaptive-layout" checked>
+          </li>
+          <li>
+            <label for="fix-layout">Фиксированная</label>
+            <input type="radio" name="layout" value="fix" id="fix-layout">
+          </li>
+          <li>
+            <label for="flexible-layout">Резиновая</label>
+            <input type="radio" name="layout" value="flexible" id="flexible-layout">
+          </li>
+        </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности</legend>
+          <ul>
+            <li>
+              <label for="site-slider">Слайдер</label>
+              <input type="checkbox" name="slider" id="site-slider" checked>
+            </li>
+            <li>
+              <label for="site-block">Блок преимуществ</label>
+              <input type="checkbox" name="feature-block" id="site-block">
+            </li>
+            <li>
+              <label for="site-news">Новости</label>
+              <input type="checkbox" name="news" id="site-news" checked>
+            </li>
+            <li>
+              <label for="site-gallery">Галерея</label>
+              <input type="checkbox" name="gallery" id="site-gallery">
+            </li>
+            <li>
+              <label for="site-cart">Корзина</label>
+              <input type="checkbox" name="cart-block" id="site-cart">
+            </li>
+          </ul>
+        </fieldset>
+
+      </form>
+      <button class="btn">Показать</button>
     </section>
 
     <section class="product">
@@ -98,5 +142,21 @@
       </p>
     </div>
   </footer>
+
+  <section class="modal">
+    <h2 class="modal-title">Напишите нам</h2>
+    <p class="modal-form">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="person-field">Ваше имя:</label>
+      <input type="text" name="person" id="person-field" placeholder="Имя Фамилия">
+      <label for="email-field">Ваш e-mail:</label>
+      <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      <label for="message-form">Текст письма:</label>
+      <textarea name="message" id="message-form" rows="5">В свободной форме</textarea>
+      <button type="button" class="btn">Отправить</button>
+    </form>
+    </p>
+  </section>
+
 </body>
 </html>

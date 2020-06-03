@@ -22,7 +22,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-style: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
@@ -76,10 +76,16 @@ img {
 }
 
 .filter legend {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 19px;
   color: var(--advance-black);
   text-transform: uppercase;
+}
+
+.filter label {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--basic-black);
 }
 
 .range-label {
@@ -105,8 +111,8 @@ img {
   opacity: 0.1;
 }
 
-.filter-input-checkbox label:disabled,
-.filter-input-radio label:disabled {
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label {
   opacity: 0.3;
 }
 
@@ -118,6 +124,7 @@ img {
   color: var(--advance-black);
   background-color: var(--basic-gray);
   text-transform: uppercase;
+  border: none;
 }
 
 .order-list {
@@ -127,6 +134,7 @@ img {
 .order-title {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -142,6 +150,7 @@ img {
   color: var(--special-white);
   text-transform: uppercase;
   background-color: var(--special-red);
+  border: none;
 }
 
 .btn:hover {
@@ -208,6 +217,12 @@ img {
   line-height: 36px;
   font-weight: 700;
   color: var(--advance-black);
+}
+
+.discont-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--special-gray);
 }
 
 .modal {

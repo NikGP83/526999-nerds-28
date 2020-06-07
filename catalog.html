@@ -11,28 +11,32 @@
 <body>
   <header class="main-header">
     <nav class="site-navigation">
-      <a href="index.html" class="header-logo"><img src="#" alt="Магазин сайтов Nёrd's" width="160" height="65"></a>
+      <div class="container">
+       <div class="site-navigation-wrapper">
+      <a class="header-logo"><img src="img/nerds-logo.svg" alt="Магазин сайтов Nёrd's" width="160" height="65"></a>
       <ul class="site-navigation-menu">
         <li class="site-navigation-item"><a href="index.html">Студия</a></li>
         <li class="site-navigation-item"><a href="#">Клиенты</a></li>
         <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
         <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
-      <div class="cart ">
+        <div class="cart">
         <a href="#" class="cart-item"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
         </div>
+      </div>
+      </div>
     </nav>
     <h1 class="main-title">Магазин готовых шаблонов</h1>
   </header>
 
-  <main>
+  <main class="page-catalog container">
 
     <section class="filters">
 
       <h2 class="visually-hidden">Фильтры</h2>
 
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="range-filter">
           <legend>Стоимость:</legend>
           <div class="price-range">
             <!-- тут будет бегунок !-->
@@ -42,7 +46,7 @@
           <label class="range-label" for="to-price">До</label>
           <input type="number" name="max-price" id="to-price" value="15 000">
         </fieldset>
-        <fieldset>
+        <fieldset class="radio-filter">
         <legend>Сетка:</legend>
         <ul>
           <li>
@@ -59,8 +63,8 @@
           </li>
         </ul>
         </fieldset>
-        <fieldset>
-          <legend>Особенности</legend>
+        <fieldset class="checkbox-filter">
+          <legend>Особенности:</legend>
           <ul>
             <li>
               <input class="filter-input-checkbox" type="checkbox" name="slider" id="site-slider" checked>
@@ -84,9 +88,10 @@
             </li>
           </ul>
         </fieldset>
-
+        <button type="button" class="btn-filter">Показать</button>
       </form>
-      <button class="filter-btn">Показать</button>
+
+
     </section>
 
     <section class="catalog">
@@ -117,33 +122,40 @@
         </li>
         <li class="catalog-list-item">
           <a href="#">
-            <p>
+            <div>
               <img src="img/pink.jpg"  width="360" height="580" alt="сайт Pink">
-            </p>
+            </div>
           </a>
         </li>
         </li>
         <li class="catalog-list-item">
           <a href="#">
-            <p>
+            <div>
               <img src="img/barber.jpg" width="360" height="580" alt="сайт Barbershop Borodinski">
-            </p>
+            </div>
           </a>
         </li>
         </li>
         <li class="catalog-list-item">
           <a href="#">
-            <p>
+            <div>
+              <img src="img/mishka.jpg" alt="сайт Mishka" width="360" height="580">
+            </div>
+          </a>
+        </li>
+        <li class="catalog-list-item">
+          <a href="#">
+            <div>
               <img src="img/a+.jpg" width="360" height="580" alt="сайт A+">
-            </p>
+            </div>
           </a>
         </li>
         </li>
         <li class="catalog-list-item">
           <a href="#">
-            <p>
+            <div>
               <img src="img/kvast.jpg" width="360" height="580" alt="сайт Кваст">
-            </p>
+            </div>
           </a>
         </li>
         </li>
@@ -154,6 +166,8 @@
             <li class="paginator-list-item"><a href="#">3</a></li>
             <li class="paginator-list-item"><a href="#">Следующая</a></li>
           </ul>
+        </div>
+        </ul>
         </div>
     </section>
 
@@ -181,6 +195,8 @@
   </section>
 
   <footer class="site-footer">
+    <div class="container">
+    <div class="site-footer-wrapper">
     <ul class="socials-list">
       <li class="socials-item"><a href="#"><img src="img/vk.svg" height="81" width="81" alt="Вконтакте">Вконтакте</a></li>
       <li class="socials-item"><a href="#"><img src="img/fb.svg" height="81" width="81" alt="Фейсбук">Фейсбук</a></li>
@@ -189,6 +205,8 @@
     <div class="discont">
       <p class="discont-title">Давайте дружить, это выгодно!</p>
       <p class="discont-text">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    </div>
     </div>
   </footer>
 

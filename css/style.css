@@ -566,9 +566,20 @@ img {
 /* contacts block */
 
 .contacts-wrap {
-  width: 320px;
+  position: relative;
+  min-height: 420px;
+  background-image: url(/img/map1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.information-wrap {
+  position: absolute;
+  left: 12%;
+  top: 10%;
   padding: 50px;
   background-color: var(--special-white);
+  margin-left: 140px;
 }
 
 .contacts-title {
@@ -588,10 +599,10 @@ img {
   color: var(--extra-gray);
 }
 
-.map {
-  display: flex;
-  align-items: center;
-  min-width: 1140px;
+.marker {
+  position: absolute;
+  left: 56%;
+  top: 21%;
 }
 
 /* modal */

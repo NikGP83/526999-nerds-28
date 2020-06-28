@@ -15,42 +15,41 @@
        <div class="site-navigation-wrapper">
       <a class="header-logo"><img src="img/nerds-logo.svg" alt="Магазин сайтов Nёrd's" width="160" height="65"></a>
       <ul class="site-navigation-menu">
-        <li class="site-navigation-item"><a href="index.html">Студия</a></li>
+        <li class="site-navigation-item"><a href="index.html" class="navigation-current">Студия</a></li>
         <li class="site-navigation-item"><a href="#">Клиенты</a></li>
         <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
         <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
         <div class="cart">
-        <a href="#" class="cart-item"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
+        <a href="#" class="cart-item">Корзина</a>
         </div>
       </div>
       </div>
     </nav>
   </header>
 
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Магазин готовых сайтов Nёrd's</h1>
 
       <section class="features">
+        <div class="features-wrapper container">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="slider">
         <ul class="slider-list">
-          <li class="slider-item">
+          <li class="slider-item slider-item-active">
             <p class="slider-promo">Долго, дорого, скурпулёзно</p>
-            <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного прилодения.</p>
+            <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a href="#" class="btn">Узнать больше</a>
           </li>
           <li class="slider-item">
-            <p class="slider-promo">Любим математику  как никто другой</p>
-              <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-              <a href="#" class="btn">Узнать больше</a>
-              <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Картинка с монитором компьютера">
+            <p class="slider-promo">Любим математику как никто другой</p>
+            <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a href="#" class="btn">Узнать больше</a>
           </li>
           <li class="slider-item">
             <p class="slider-promo">Только ночь, только хардкор</p>
             <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a href="#" class="btn">Узнать больше</a>
-            <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Изображение планшета">
           </li>
         </ul>
         <ul class="slider-navigation">
@@ -65,9 +64,10 @@
           </li>
         </ul>
         </div>
+        </div>
       </section>
 
-      <section class="order">
+      <section class="order container">
         <h2 class="visually-hidden">Выбрать заказ!</h2>
         <ul class="order-list">
           <li class="order-list-item">
@@ -96,21 +96,21 @@
             </div>
             <h2 class="order-title">Презентации</h2>
             <p class="order-text">
-              Вы даже не подозреваете,  насколько вы изумительны!
+              Вы даже не подозреваете, насколько вы изумительны!
             </p>
             <a href="#" class="btn btn-yellow">Заказать</a>
           </li>
         </ul>
       </section>
 
-      <section class="advertising">
+      <section class="advertising container">
         <h2 class="visually-hidden">О нас</h2>
         <div class="advertising-wrap">
           <p class="advertising-principles-title">
-            Мы — маленькая, но гордая  дизайн-студия из Краснодара.
+            Мы — маленькая, но гордая дизайн-студия из Краснодара.
           </p>
           <p class="advertising-principles-text">
-            Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива. Работаем не покладая рук, как роботы.
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
           </p>
           <h2 class="work-title">Выполняем заказы на разработку:</h2>
           <ul class="work-list">
@@ -131,15 +131,15 @@
             <th class="statistics-item">50<sup>%</sup></th>
           </tr>
           <tr class="statistics-text-cell">
-            <td class="statistics-text-item">Уровень  самоотдачи</td>
-            <td class="statistics-text-item">Соблюдение  сроков</td>
-            <td class="statistics-text-item">Минимальная  предоплата</td>
+            <td class="statistics-text-item">Уровень самоотдачи</td>
+            <td class="statistics-text-item">Соблюдение сроков</td>
+            <td class="statistics-text-item">Минимальная предоплата</td>
           </tr>
         </table>
         </div>
       </section>
 
-      <section class="product">
+      <section class="product container">
         <h2 class="visually-hidden">Наши работы</h2>
         <ul class="product-list">
           <li class="product-list-item">
@@ -161,20 +161,23 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="contacts-wrap">
+        <div class="contacts-wrapper">
+        <div class="map">
+          <img src="img/map1.png" alt="Карта с местонахождением компании" width="1440" height="416">
           <div class="information-wrap">
           <h2 class="contacts-title">Nёrds design studio</h2>
           <p class="contacts-text">
             191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8
+             ул. Б. Конюшенная, д. 19/8
             </p>
           <p class="contacts-text">
             <a href="tel:+7 812 275-75-75">тел. +7 (812) 275-75-75</a>
           </p>
           <button type="button" class="btn">Напишите нам</button>
+         </div>
+          <div class="marker">
+            <img src="img/map-marker1.png" width="231" height="190" alt="Маркер нашего местонахождения">
           </div>
-        <div class="marker">
-          <img src="img/map-marker1.png" width="231" height="190" alt="Маркер нашего местонахождения">
         </div>
         </div>
       </section>
@@ -183,9 +186,24 @@
       <div class="container">
       <div class="site-footer-wrapper">
       <ul class="socials-list">
-        <li class="socials-item"><a href="#"><img src="img/vk.svg" height="81" width="81" alt="Вконтакте">Вконтакте</a></li>
-        <li class="socials-item"><a href="#"><img src="img/fb.svg" height="81" width="81" alt="Фейсбук">Фейсбук</a></li>
-        <li class="socials-item"><a href="#"><img src="img/instagram.svg" height="81" width="81" alt="Инстаграм">Инстаграм</a></li>
+        <li class="socials-item">
+          <a href="#">
+            <img src="img/vk.svg" height="81" width="81" alt="Вконтакте">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <img src="img/fb.svg" height="81" width="81" alt="Фейсбук">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <img src="img/instagram.svg" height="81" width="81" alt="Инстаграм">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
       </ul>
       <div class="discont">
         <p class="discont-title">Давайте дружить, это выгодно!</p>

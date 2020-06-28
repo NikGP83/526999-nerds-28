@@ -13,15 +13,15 @@
     <nav class="site-navigation">
       <div class="container">
        <div class="site-navigation-wrapper">
-      <a class="header-logo inner-logo"><img src="img/nerds-logo.svg" alt="Магазин сайтов Nёrd's" width="160" height="65"></a>
+      <a class="header-logo"><img src="img/nerds-logo.svg" alt="Магазин сайтов Nёrd's" width="160" height="65"></a>
       <ul class="site-navigation-menu">
         <li class="site-navigation-item"><a href="index.html">Студия</a></li>
         <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-        <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+        <li class="site-navigation-item"><a href="catalog.html" class="navigation-current">Магазин</a></li>
         <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
         <div class="cart">
-        <a href="#" class="cart-item"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
+        <a href="#" class="cart-item">Корзина</a>
         </div>
       </div>
       </div>
@@ -116,7 +116,7 @@
           </a>
           <div class="price-label">
             <h3>Sedona</h3>
-            <p>Информационный сайт  для туристов</p>
+            <p>Информационный сайт для туристов</p>
             <button type="button" class="btn">9900 <span class="money">₽</span></button>
           </div>
         </li>
@@ -175,20 +175,23 @@
 
   <section class="contacts">
     <h2 class="visually-hidden">Как нас найти</h2>
-    <div class="contacts-wrap">
+    <div class="contacts-wrapper">
+    <div class="map">
+      <img src="img/map1.png" alt="Карта с местонахождением компании" width="1440" height="416">
       <div class="information-wrap">
       <h2 class="contacts-title">Nёrds design studio</h2>
       <p class="contacts-text">
         191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
+         ул. Б. Конюшенная, д. 19/8
         </p>
       <p class="contacts-text">
         <a href="tel:+7 812 275-75-75">тел. +7 (812) 275-75-75</a>
       </p>
       <button type="button" class="btn">Напишите нам</button>
+     </div>
+      <div class="marker">
+        <img src="img/map-marker1.png" width="231" height="190" alt="Маркер нашего местонахождения">
       </div>
-    <div class="marker">
-      <img src="img/map-marker1.png" width="231" height="190" alt="Маркер нашего местонахождения">
     </div>
     </div>
   </section>
@@ -197,9 +200,24 @@
     <div class="container">
     <div class="site-footer-wrapper">
     <ul class="socials-list">
-      <li class="socials-item"><a href="#"><img src="img/vk.svg" height="81" width="81" alt="Вконтакте">Вконтакте</a></li>
-      <li class="socials-item"><a href="#"><img src="img/fb.svg" height="81" width="81" alt="Фейсбук">Фейсбук</a></li>
-      <li class="socials-item"><a href="#"><img src="img/instagram.svg" height="81" width="81" alt="Инстаграм">Инстаграм</a></li>
+      <li class="socials-item">
+        <a href="#">
+          <img src="img/vk.svg" height="81" width="81" alt="Вконтакте">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a href="#">
+          <img src="img/fb.svg" height="81" width="81" alt="Фейсбук">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a href="#">
+          <img src="img/instagram.svg" height="81" width="81" alt="Инстаграм">
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
     </ul>
     <div class="discont">
       <p class="discont-title">Давайте дружить, это выгодно!</p>

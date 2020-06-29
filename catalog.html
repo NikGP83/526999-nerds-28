@@ -36,15 +36,25 @@
       <h2 class="visually-hidden">Фильтры</h2>
 
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="range-filter">
+        <fieldset class="filter-item">
           <legend>Стоимость:</legend>
-          <div class="price-range">
-            <!-- тут будет бегунок !-->
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
           </div>
-          <label class="range-label" for="from-price">От</label>
-          <input type="number" name="min-price" id="from-price" value="0">
-          <label class="range-label" for="to-price">До</label>
-          <input type="number" name="max-price" id="to-price" value="15000">
         </fieldset>
         <fieldset class="radio-filter">
         <legend>Сетка:</legend>
@@ -107,6 +117,7 @@
         </ul>
       </div>
 
+      <div class="catalog-board">
       <ul class="catalog-list">
         <li class="catalog-list-item">
           <a href="#">
@@ -117,8 +128,8 @@
           <div class="price-label">
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
-            <button type="button" class="btn">9900 <span class="money">₽</span></button>
-          </div>
+            <button type="button" class="btn">9 900 <span class="money">₽</span></button>
+        </div>
         </li>
         <li class="catalog-list-item">
           <a href="#">
@@ -164,7 +175,7 @@
             <li class="paginator-list-item pagination-visited-item"><a href="#">1</a></li>
             <li class="paginator-list-item"><a href="#">2</a></li>
             <li class="paginator-list-item"><a href="#">3</a></li>
-            <li class="paginator-list-item"><a href="#">Следующая</a></li>
+            <li class="paginator-list-item btn"><a href="#">Следующая</a></li>
           </ul>
         </div>
         </ul>

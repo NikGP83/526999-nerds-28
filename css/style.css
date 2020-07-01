@@ -858,7 +858,64 @@ img {
 /* modal */
 
 .modal {
-  display: none;
+  display: block;
+  width: 960px;
+  min-height: 590px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  background-color: var(--special-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-form {
+
+  padding: 63px 100px 84px 100px;
+  background-color: var(--special-white);
+
+}
+
+.modal-title {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+}
+
+.client-form label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--advance-black);
+}
+
+.client-form input {
+  width: 360px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  border: 2px solid var(--special-toggle-grey);
+  color: var(--special-gray);
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+
+.client-form textarea {
+  width: 760px;
+  padding-left: 16px;
+  padding-top: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--special-gray);
+  border: 2px solid var(--special-toggle-grey);
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+
+.client-form .btn {
+  display: block;
 }
 
 .visually-hidden:not(:focus):not(:active),

@@ -217,22 +217,29 @@
     </footer>
 
     <section class="modal">
-      <div class="modal-form">
       <h2 class="modal-title">Напишите нам</h2>
-      <span class="visually-hidden">Закрыть</span>
-      <div class="modal-form">
+      <button class="modal-close visually-hidden">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post" class="client-form">
+        <div class="person-block">
         <label for="person-field">Ваше имя:</label>
         <input type="text" name="person" id="person-field" placeholder="Имя Фамилия">
+        </div>
+        <div class="email-block">
         <label for="email-field">Ваш e-mail:</label>
         <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        </div>
+        <div class="message-block">
         <label for="message-form">Текст письма:</label>
         <textarea name="message" id="message-form" rows="5">В свободной форме</textarea>
+        </div>
+        <div class="send-block">
         <button type="button" class="btn">Отправить</button>
+        </div>
       </form>
-      </div>
-      </div>
+
     </section>
 
 </body>
 </html>
+
+

@@ -19,6 +19,7 @@
   --special-paginator-grey:#DFDFDF;
   --special-scale-grey:#D7DCDF;
   --special-toggle-grey: #ABABAB;
+  --current-dot: #C1C1C1;
 }
 
 body {
@@ -635,12 +636,39 @@ img {
 
 .slider-navigation {
   position: absolute;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   bottom: 50%;
   right: 50%;
+  z-index: 20;
+  width: 88px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   min-width: 88px;
+}
+
+.slider-navigation-dots .navigation-dots {
+  position: relative;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--special-white);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current-dot::before{
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 33%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--special-white);
+  border-radius: 50%;
+  border: 2px solid var(--current-dot);
 }
 
 .slider-item .btn {
@@ -873,6 +901,7 @@ img {
 /* modal */
 
 .modal-window {
+  display: none;
   width: 760px;
   min-height: 445px;
   position: fixed;

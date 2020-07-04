@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
+  <header class="main-header inner-header">
     <nav class="site-navigation">
       <div class="container">
        <div class="site-navigation-wrapper">
@@ -111,10 +111,31 @@
       <div class="sort-block">
         <h2 class="sort-title">Сортировать:</h2>
         <ul class="sort-list">
-          <li class="sort-list-item"><a href="#" class="sort-btn sort-btn-visited">По цене</a></li>
-          <li class="sort-list-item"><a href="#" class="sort-btn">По типу</a></li>
-          <li class="sort-list-item"><a href="#" class="sort-btn">По названию</a></li>
+          <li class="sort-list-item">
+            <a href="#" class="sort-btn sort-btn-visited">По цене</a>
+          </li>
+          <li class="sort-list-item">
+            <a href="#" class="sort-btn">По типу</a>
+          </li>
+          <li class="sort-list-item">
+            <a href="#" class="sort-btn">По названию</a>
+          </li>
         </ul>
+        <div class="sort-arrows">
+          <a href="#" class="sort-icon sort-down sort-active">
+            <svg class="sort-down-icon" width="11" height="10" viewBox="0 0 11 10" fill="none">
+              <path d="M5.5 10L0 0H11" fill="#231F20"/>
+              </svg>
+            <span class="visually-hidden">Сортировать по убыванию</span>
+          </a>
+          <a href="#" class="sort-icon sort-up">
+            <svg class="sort-up-icon" width="11" height="10" viewBox="0 0 11 10" fill="none">
+              <path d="M5.5 10L0 0H11" fill="#231F20"/>
+              </svg>
+            <span class="visually-hidden">Сортировать по возрастанию</span>
+          </a>
+        </div>
+
       </div>
 
       <div class="catalog-board">
@@ -123,7 +144,7 @@
           <a href="#">
             <div class="browser"></div>
             <div>
-              <img src="img/sedona.jpg" alt="сайт Sedona" width="360" height="580">
+              <img src="img/sedona.jpg" alt="сайт Sedona" width="358" height="578">
             </div>
           </a>
           <div class="price-label">

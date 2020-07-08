@@ -510,20 +510,20 @@ img {
   cursor: pointer;
 }
 
-.btn.disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--special-red);
+.btn:focus {
+  background-color: var(--special-red-focus);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  opacity: 0.3;
 }
 
 .btn:hover {
   background-color: var(--special-red-hower);
 }
 
-.btn:focus {
-  background-color: var(--special-red-focus);
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-  opacity: 0.3;
+.btn.disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--special-red);
 }
 
 .btn-green {
@@ -665,6 +665,18 @@ img {
 
 .socials-item {
   margin-right: 10px;
+}
+
+.social-button {
+  background-color: var(--special-white);
+}
+
+/* .social-button:hover {
+  background-color: var(--special-red-hower);
+} */
+
+.social-button:hover path {
+  fill: var(--special-red-hower);
 }
 
 .discount-title {
@@ -1081,7 +1093,7 @@ img {
   background-color: var(--special-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   padding: 63px 99px 84px 100px;
-
+  z-index: 30;
 }
 
 .client-form {
@@ -1124,6 +1136,7 @@ img {
   background-color: transparent;
   color: var(--special-gray);
   opacity: 0.5;
+  outline: none;
 }
 
 .client-form input:hover {
@@ -1154,6 +1167,7 @@ img {
   border: 2px solid var(--special-toggle-grey);
   opacity: 0.5;
   box-sizing: border-box;
+  outline: none;
 }
 
 .client-form textarea:hover {
@@ -1218,6 +1232,16 @@ img {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+  background-color: var(--special-red-hower)
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  opacity: 0.1;
 }
 
 .visually-hidden:not(:focus):not(:active),

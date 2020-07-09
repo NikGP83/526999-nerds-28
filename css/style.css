@@ -597,8 +597,12 @@ img {
 }
 
 .catalog-image {
+  width: 358px;
+  height: 578px;
   margin: 0;
   object-fit: contain;
+  border: 1px solid var(--special-paginator-grey);
+  border-radius: 0 0 6px 6px;
 }
 
 .browser {
@@ -1146,6 +1150,10 @@ img {
 
 .modal {
   display: none;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-window {

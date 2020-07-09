@@ -4,6 +4,7 @@
   --basic-gray: #EEEEEE;
   --modal-close: rgba(251, 86, 90, 0.3);
   --checkbox: #4D4D4D;
+  --icon-color: #E1E1E1;
 
   --special-red: #FB565A;
   --special-red-hower: #E74246;
@@ -673,16 +674,29 @@ img {
 }
 
 .social-button {
-  background-color: var(--special-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 81px;
+  height: 81px;
+  background-color: var(--icon-color);
+  border-radius: 50%;
 }
 
+.social-button:hover {
+  background-color: var(--special-red-hower);
+}
 
-.social-button:hover path {
-  fill: var(--special-red-hower);
+.social-button:active {
+  background-color: var(--special-red-focus);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-button:active path {
+  opacity: 0.3;
 }
 
 .discount {
-
   width: 660px;
 }
 

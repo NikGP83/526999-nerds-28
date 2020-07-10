@@ -2,6 +2,7 @@
   --advance-black: #000000;
   --basic-black: #283136;
   --basic-gray: #EEEEEE;
+  --advance-grey: #C4C4C4;
   --modal-close: rgba(251, 86, 90, 0.3);
   --checkbox: #4D4D4D;
   --icon-color: #E1E1E1;
@@ -28,7 +29,7 @@ body {
   min-width: 1200px;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto","Adrial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -317,7 +318,7 @@ img {
   font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 22px;
   color: var(--basic-black);
 }
 
@@ -329,6 +330,8 @@ img {
   padding-right: 2px;
   text-align: center;
   color: var(--basic-black);
+  font-size: 16px;
+  line-height: 22px;
   border: none;
   border-radius: 5px;
   background: var(--basic-gray);
@@ -387,6 +390,7 @@ img {
 }
 
 .filter-option label {
+  font-family: "Roboto","Adrial", sans-serif;
   position: relative;
   display: block;
   cursor: pointer;
@@ -602,7 +606,7 @@ img {
   height: 578px;
   margin: 0;
   object-fit: contain;
-  border: 1px solid var(--special-paginator-grey);
+  border: 1px solid var(--advance-grey);
   border-radius: 0 0 6px 6px;
 }
 
@@ -624,7 +628,7 @@ img {
   width: 100%;
   top: 59%;
   left: 0;
-  padding: 26px 80px 44px 80px;
+  padding: 26px 53px 44px 52px;
   background-color: var(--basic-gray);
 }
 
@@ -654,12 +658,15 @@ img {
 }
 
 .price-label p {
+  font-size: 16px;
+  line-height: 18px;
   color: var(--extra-gray);
 }
 
 .price-label .btn {
   display: block;
-  width: 100%;
+  width: 200px;
+  margin: 0 auto;
   border-radius: 3px;
 }
 

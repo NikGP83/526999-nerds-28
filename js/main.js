@@ -7,4 +7,4 @@ cart.addEventListener('click', (e) => e.preventDefault());
 
 answerFormButton.addEventListener('click', () => modalForm.classList.toggle('modal-show'));
 
-closeModalForm.addEventListener('click', () =>  modalForm.classList.toggle('modal-show'));
+closeModalForm.addEventListener('click', () => modalForm.classList.toggle('modal-show'));

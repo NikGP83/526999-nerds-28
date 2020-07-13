@@ -33,7 +33,7 @@ body {
   min-width: 1200px;
   padding: 0;
   margin: 0;
-  font-family: "Roboto","Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -391,16 +391,36 @@ img {
   margin-bottom: 27px;
 }
 
-.filter-list li {
+.filter-item-ckeckbox {
+  margin-bottom: 23px;
+}
+
+.filter-item-one {
   margin-bottom: 22px;
 }
 
-.filter-list .filter-item-four {
-  margin-bottom: 20px;
+.radio-btn-item {
+  margin-bottom: 22px;
+}
+
+.filter-item-two {
+  margin-bottom: 21px;
+}
+
+.filter-item-three {
+  margin-bottom: 21px;
+}
+
+.filter-item-four {
+  margin-bottom: 21px;
+}
+
+.filter-item-five {
+  margin-bottom: 23px;
 }
 
 .filter-option label {
-  font-family: "Roboto","Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   position: relative;
   display: block;
   cursor: pointer;
@@ -414,8 +434,8 @@ img {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -1px;
-  top: -2px;
+  left: 1px;
+  top: -1px;
   width: 18px;
   height: 18px;
   border: 2px solid var(--checkbox);
@@ -427,7 +447,7 @@ img {
   content: "";
   position: absolute;
   top: -1px;
-  left: 2px;
+  left: 5px;
   width: 22px;
   height: 17px;
   background-image: url("../img/tick.svg");
@@ -458,15 +478,23 @@ img {
   opacity: 0.4;
 }
 
-
-
 .filter-input-checkbox:hover+label::before,
-.filter-input-radio:hover+label::before{
+.filter-input-radio:hover+label::before {
   opacity: 1;
 }
 
-.filter-input-checkbox:focus + label:before,
-.filter-input-radio:focus + label:before {
+.filter-input-checkbox:focus+label:before,
+.filter-input-radio:focus+label:before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:hover+label::after,
+.filter-input-radio:hover+label::after {
+  opacity: 1;
+}
+
+.filter-input-checkbox:focus+label:after,
+.filter-input-radio:focus+label:after {
   opacity: 1;
 }
 
@@ -688,9 +716,19 @@ img {
   color: var(--extra-gray);
 }
 
-.price-label .first-label {
+.price-label .sedona-text-label {
   padding-left: 27px;
   padding-right: 29px;
+}
+
+.price-label .barbershop-text-label {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.price-label .mishka-text-label {
+  padding-left: 25px;
+  padding-right: 27px;
 }
 
 .price-label .btn {
@@ -886,8 +924,8 @@ img {
 .current-dot::before {
   content: "";
   position: absolute;
-  top: 28%;
-  left: 31%;
+  top: 5px;
+  left: 5px;
   width: 4px;
   height: 4px;
   background-color: var(--special-white);
@@ -1042,7 +1080,8 @@ img {
 }
 
 .product-adjustment-four {
-  padding-right: 40px;
+  padding-top: 7px;
+  padding-right: 42px;
 }
 
 .product-adjustment-one::after {

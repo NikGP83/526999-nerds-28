@@ -7,7 +7,7 @@
   <title>Nёrd's catalog</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/minify.css">
 </head>
 
 <body>
@@ -72,16 +72,16 @@
         <fieldset class="filter-option radio-filter">
           <legend>Сетка:</legend>
           <ul class="filter-list">
-            <li>
+            <li class="radio-btn-item">
               <input class="visually-hidden filter-input-radio" type="radio" name="layout" value="adaptive"
                 id="adaptive-layout" checked>
               <label for="adaptive-layout">Адаптивная</label>
             </li>
-            <li>
+            <li class="radio-btn-item">
               <input class="visually-hidden filter-input-radio" type="radio" name="layout" value="fix" id="fix-layout">
               <label class="fix-label" for="fix-layout">Фиксированная</label>
             </li>
-            <li>
+            <li class="radio-btn-item">
               <input class="visually-hidden filter-input-radio" type="radio" name="layout" value="flexible"
                 id="flexible-layout">
               <label for="flexible-layout">Резиновая</label>
@@ -91,24 +91,24 @@
         <fieldset class="filter-option checkbox-filter">
           <legend>Особенности:</legend>
           <ul class="filter-list">
-            <li class="filter-item-one">
+            <li class="ilter-item-ckeckbox filter-item-one">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="site-slider"
                 checked>
               <label for="site-slider">Слайдер</label>
             </li>
-            <li class="filter-item-two">
+            <li class="ilter-item-ckeckbox filter-item-two">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature-block" id="site-block">
               <label for="site-block">Блок преимуществ</label>
             </li>
-            <li class="filter-item-three">
+            <li class="ilter-item-ckeckbox filter-item-three">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="site-news" checked>
               <label for="site-news">Новости</label>
             </li>
-            <li class="filter-item-four">
+            <li class="ilter-item-ckeckbox filter-item-four">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="site-gallery">
               <label for="site-gallery">Галерея</label>
             </li>
-            <li class="filter-item-five">
+            <li class="ilter-item-ckeckbox filter-item-five">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="cart-block" id="site-cart">
               <label for="site-cart">Корзина</label>
             </li>
@@ -162,7 +162,7 @@
               <a href="#">
                 <h3>Sedona</h3>
               </a>
-              <p class="first-label">Информационный сайт для туристов</p>
+              <p class="sedona-text-label">Информационный сайт для туристов</p>
               <button type="button" class="btn">
                 <span class="btn-text">9 900</span>
                 <span class="money btn-text">₽</span>
@@ -195,11 +195,11 @@
                   alt="сайт Barbershop Borodinski">
               </div>
             </a>
-            <div class="price-label visually-hidden">
+            <div class="price-label">
               <a href="#">
-                <h3>Barbershop Borodinski</h3>
+                <h3>Barbershop</h3>
               </a>
-              <p></p>
+              <p class="barbershop-text-label">Сайт салона красоты. Для мужчин, да.</p>
               <button type="button" class="btn">
                 <span class="btn-text">9 900</span>
                 <span class="money btn-text">₽</span>
@@ -213,11 +213,11 @@
                 <img class="catalog-image" src="img/mishka.jpg" alt="сайт Mishka" width="360" height="580">
               </div>
             </a>
-            <div class="price-label visually-hidden">
+            <div class="price-label">
               <a href="#">
                 <h3>Mishka</h3>
               </a>
-              <p></p>
+              <p class="mishka-text-label">Интернет-магазин вязаных игрушек</p>
               <button type="button" class="btn">
                 <span class="btn-text">9 900</span>
                 <span class="money btn-text">₽</span>
@@ -231,11 +231,11 @@
                 <img class="catalog-image" src="img/a-plus.jpg" width="360" height="580" alt="сайт A+">
               </div>
             </a>
-            <div class="price-label visually-hidden">
+            <div class="price-label">
               <a href="#">
-                <h3>A+</h3>
+                <h3>A plus</h3>
               </a>
-              <p></p>
+              <p>Лендинг курсов повышения квалификации</p>
               <button type="button" class="btn">
                 <span class="btn-text">9 900</span>
                 <span class="money btn-text">₽</span>
@@ -249,11 +249,11 @@
                 <img class="catalog-image" src="img/kvast.jpg" width="360" height="580" alt="сайт Кваст">
               </div>
             </a>
-            <div class="price-label visually-hidden">
+            <div class="price-label">
               <a href="#">
                 <h3>Кваст</h3>
               </a>
-              <p></p>
+              <p>Промо-сайт производителя крафтового кваса</p>
               <button type="button" class="btn">
                 <span class="btn-text">9 900</span>
                 <span class="money btn-text">₽</span>

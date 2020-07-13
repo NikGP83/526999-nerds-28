@@ -33,7 +33,7 @@ body {
   min-width: 1200px;
   padding: 0;
   margin: 0;
-  font-family: "Roboto","Adrial", sans-serif;
+  font-family: "Roboto","Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -379,28 +379,34 @@ img {
 
 .filter-option {
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
   border: none;
 }
 
-.filter-list:first-child {
-  margin-bottom: 1px;
+.radio-filter {
+  margin-bottom: 24px;
 }
 
-.filter-option:last-child label {
-  margin-bottom: 0;
+.checkbox-filter {
+  margin-bottom: 27px;
+}
+
+.filter-list li {
+  margin-bottom: 22px;
+}
+
+.filter-list .filter-item-four {
+  margin-bottom: 20px;
 }
 
 .filter-option label {
-  font-family: "Roboto","Adrial", sans-serif;
+  font-family: "Roboto","Arial", sans-serif;
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 23px;
   padding-left: 37px;
   color: var(--basic-black);
 }
@@ -830,8 +836,27 @@ img {
 
 .slider-text {
   width: 416px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
+
+.slider-item:nth-child(2) .slider-promo {
+  margin-bottom: 38px;
+}
+
+.slider-item:nth-child(2) .slider-text {
+  margin-bottom: 26px;
+}
+
+.slider-item:nth-child(3) .slider-promo {
+  width: 500px;
+  margin-bottom: 38px;
+}
+
+.slider-item:nth-child(3) .slider-text {
+  width: 350px;
+  margin-bottom: 26px;
+}
+
 
 .slider-navigation {
   position: absolute;
@@ -982,9 +1007,9 @@ img {
 /* product block */
 
 .product {
-  margin-bottom: 72px;
+  margin-bottom: 79px;
   padding-top: 44px;
-  padding-bottom: 44px;
+  padding-bottom: 37px;
   border-top: 2px solid var(--basic-gray);
   border-bottom: 2px solid var(--basic-gray);
 }
@@ -1020,13 +1045,33 @@ img {
   padding-right: 40px;
 }
 
-.product-list-item:not(:nth-child(4))::before {
+.product-adjustment-one::after {
   content: "";
   position: absolute;
   width: 2px;
   height: 52px;
-  left: 120%;
-  top: 3%;;
+  left: 279px;
+  top: 8px;
+  background-color: var(--basic-gray);
+}
+
+.product-adjustment-two::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  left: 252px;
+  top: 17px;
+  background-color: var(--basic-gray);
+}
+
+.product-adjustment-three::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  left: 238px;
+  top: -3px;
   background-color: var(--basic-gray);
 }
 
